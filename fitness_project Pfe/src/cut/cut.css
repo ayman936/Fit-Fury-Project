@@ -1,0 +1,196 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+
+  #nav{
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+
+  #nav:hover{
+    transform: translateY(-3px)
+  }
+  
+  #div{
+
+     transition: transform 0.3s ease;
+  }
+  
+  #div:hover {
+    transform: scale(1.03);
+  }
+
+  .button {
+    line-height: 1 !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: .75rem !important;
+    background-color: #9816c0 !important;
+    color: #000000 !important;
+    border-radius: 10rem !important;
+    font-weight: 700 !important;
+    padding: .75rem 1.5rem !important;
+    padding-left: 20px !important;
+    white-space: nowrap !important;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    transition: background-color .3s !important;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0 !important;
+    width: 25px !important;
+    height: 25px !important;
+    position: relative !important;
+    color: #9816c0 !important;
+    background-color: #ffffff !important; 
+    border-radius: 50% !important;
+    display: grid !important;
+    place-items: center !important;
+    overflow: hidden !important;
+  }
+  
+  .button:hover {
+    background-color: #FF6B00 !important;
+    color: #000 !important;
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color: #000 !important;
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute !important;
+    transform: translate(-150%, 150%) !important;
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out !important;
+    transform: translate(150%, -150%) !important;
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s !important;
+    transform: translate(0) !important;
+  }
+
+  .cssbuttons-io-button {
+    background: #9816c0 !important;
+    color: white !important;
+    font-family: inherit !important;
+    padding: 0.35em !important;
+    padding-left: 1.2em !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    border-radius: 0.9em !important;
+    border: none !important;
+    letter-spacing: 0.05em !important;
+    display: flex !important;
+    align-items: center !important;
+    box-shadow: inset 0 0 1.6em -0.6em #9816c0 !important;
+    overflow: hidden !important;
+    position: relative !important;
+    height: 2.8em !important;
+    padding-right: 3.3em !important;
+    cursor: pointer !important;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white !important;
+    margin-left: 1em !important;
+    position: absolute !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 2.2em !important;
+    width: 2.2em !important;
+    border-radius: 0.7em !important;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #9816c0 !important;
+    right: 0.3em !important;
+    transition: all 0.3s !important;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em) !important;
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em !important;
+    transition: transform 0.3s !important;
+    color: #9816c0 !important;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em) !important;
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95) !important;
+  }
+
+  .btn2 {
+    position: relative !important;
+    display: inline-block !important;
+    padding: 15px 30px !important;
+    border: 2px solid #000000 !important;
+    text-transform: uppercase !important;
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    transition: 0.3s !important;
+  }
+  
+  .btn2::before {
+    content: '' !important;
+    position: absolute !important;
+    top: -2px !important;
+    left: -2px !important;
+    width: calc(100% + 4px) !important;
+    height: calc(100% - -2px) !important;
+    background-color: #FF6B00 !important;
+    transition: 0.3s ease-out !important;
+    transform: scaleY(1) !important;
+  }
+  
+  .btn2::after {
+    content: '' !important;
+    position: absolute !important;
+    top: -2px !important;
+    left: -2px !important;
+    width: calc(100% + 4px) !important;
+    height: calc(100% - 50px) !important;
+    background-color: #ffffff !important;
+    transition: 0.3s ease-out !important;
+    transform: scaleY(1) !important;
+  }
+  
+  .btn2:hover::before {
+    transform: translateY(-25px) !important;
+    height: 0 !important;
+  }
+  
+  .btn2:hover::after {
+    transform: scaleX(0) !important;
+    transition-delay: 0.15s !important;
+  }
+  
+  .btn2:hover {
+    border: 2px solid #000000 !important;
+    color: #000000 !important;
+  }
+  
+  .btn2 span {
+    position: relative !important;
+    z-index: 3 !important;
+  }
+  
+  #button {
+    text-decoration: none !important;
+    border: none !important;
+    background-color: transparent !important;
+  }
+  
